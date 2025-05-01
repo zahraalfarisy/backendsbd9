@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: "https://os.netlabdte.com", 
+    origin: [process.env.FRONTEND_URL, "localhost:3000"], 
     methods: "GET,POST,PUT,DELETE", 
   })
 );
