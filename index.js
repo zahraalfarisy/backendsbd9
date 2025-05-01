@@ -10,7 +10,8 @@ const corsOptions = {
   origin: [
     process.env.FRONTEND_URL, 
     "http://localhost:3000", 
-    "http://localhost:5173"
+    "http://localhost:5173",
+    "https://cs-sbd9-zhafira.vercel.app/"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
